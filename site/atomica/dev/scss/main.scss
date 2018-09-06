@@ -1,0 +1,22 @@
+// Important vendors (Bootstrap grid, Slick slider etc.)
+// ==========================================
+
+@import 'vendor/fontawesome';
+@import 'vendor/bootstrap';
+@import 'vendor/fancybox';
+@import 'vendor/slick';
+
+// Settings (Colors, fonts, variables etc.)
+// ==========================================
+
+@import 'settings/variables';
+@import 'settings/colors';
+@import 'settings/fonts';
+
+// Elements (Buttons, fields, reusable elements etc.)
+// ==========================================
+
+@import 'element/elements';
+
+// Component (Navigation, footer, contentblocks etc.)
+// ==========================================
