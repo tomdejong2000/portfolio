@@ -1,0 +1,3 @@
+/* jsHint ignores all directories / files located in: */
+
+site/atomica/dev/js/vendor/**/*
