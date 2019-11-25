@@ -1,0 +1,80 @@
+#jeff{
+    .balk1 {
+        background: url(../gfx/jeff.png);
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        animation: streepOne 6s infinite linear;
+    }
+    .balk2 {
+        background: url(../gfx/jeff.png);
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        animation: streepTwo 7s infinite linear;
+        background-size: 300px;
+        
+    }
+    .balk3 {
+        background: url(../gfx/jeff.png);
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        animation: streepThree 5s infinite linear;
+        background-size: 800px;
+        
+    }
+    
+    @keyframes streepOne{
+        0%
+        {
+            background-position: 0px 0px;
+            transform: rotate(20deg);
+            width: 20%;
+        }
+        100%
+        {
+            background-position: 100px 750px;
+            transform: rotate(300deg);
+            width: 100%;
+        }
+    }
+    @keyframes streepTwo{
+        0%
+        {
+            background-position: 0px -100px;
+            transform: rotate(1deg);
+            width: 10%;
+            
+        }
+        100%
+        {
+            background-position: 0px 750px;
+            transform: rotate(190deg);
+            width: 80%;
+        }
+    }
+    @keyframes streepThree{
+        0%
+        {
+            background-position: 0px 100px;
+            transform: rotate(10deg);
+            width: 20%;
+        }
+        100%
+        {
+            background-position: 0px 750px;
+            transform: rotate(400deg);
+            width: 70%;
+        }
+    }
+}

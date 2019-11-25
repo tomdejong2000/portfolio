@@ -1,3 +1,19 @@
 // Main fonts
 // =============================
+@font-face {
+    font-family: MARSNEVENEKSK-Clean;
+    src: url(../gfx/MARSNEVENEKSK-Clean.otf);
+}
 
+
+html{
+    font-family: 'Ubuntu', sans-serif !important;
+    body{
+        background: #84c3ed ;
+    }
+}
+
+@font-face {
+    font-family: Cinematografica-Regular-trial;
+    src: url(../gfx/Cinematografica-Regular-trial.ttf);
+}

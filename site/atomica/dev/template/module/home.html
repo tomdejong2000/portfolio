@@ -2,14 +2,25 @@
 
 {% block content %}
 
-	<section id="main-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					v1.0
-				</div>
-			</div>
-		</div>
-	</section>
 
+<div id="multiscroll">
+       
+
+        <div class="ms-left">
+            <div class="ms-section headerleft">{% include "element/header/header.html" %}</div>
+            <div class="ms-section aboutmeleft">{% include 'element/aboutme/aboutmeleft.html' %}</div>
+			<div class="ms-section projectsleft">{% include 'element/projects/projectsleft.html' %}</div>
+			<div class="ms-section contactleft">{% include 'element/contact/contactleft.html' %}</div>
+			<div class='ms-section ms-hide footerleft'></div>
+        </div>
+        <div class="ms-right">
+            <div class="ms-section ms-hide"></div>
+            <div class="ms-section aboutmeright">{% include 'element/aboutme/aboutmeright.html' %}</div>
+            <div class="ms-section projectsright">{% include 'element/projects/projectsright.html' %}</div>
+            <div class="ms-section ms-hide contactright">{% include 'element/contact/contactright.html' %}</div>
+			<div class='ms-section footerright'>{% include 'element/footer/footerright.html' %}</div>
+        </div>
+    </div>
+
+   
 {% endblock %}

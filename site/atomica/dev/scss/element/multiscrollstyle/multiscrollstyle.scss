@@ -1,0 +1,94 @@
+#multiscroll{
+    .headerleft{
+        width: 200% !important;
+        z-index: 4;
+    }
+    .aboutmeleft{
+        width: 120% !important;
+        background-image: linear-gradient( #aa57f9, #7e4def);
+
+    }
+    .aboutmeright{
+        width:80% !important;
+        margin-left: 20%;
+        z-index: 2;
+        background-color: #84c3ed;
+    }
+    .projectsleft{
+        width: 60% !important;
+        background-color: #84c3ed;
+    }
+    .projectsright{
+        width: 140% !important;
+        margin-left: -40%;
+        background-color: $mainpurple;
+        background-image: linear-gradient( $mainpurple, #7e4def);
+
+    }
+    .contactleft{
+        background-color: #84c3ed;
+        
+    }
+    .contactright{
+        background-image: linear-gradient( #c602ff,#7e4def  );
+    }
+    
+    .footerleft{
+        width: 0% !important;
+        
+    }
+    .footerright{
+        width: 200% !important;
+        margin-left: -100%;
+        
+        background-image: linear-gradient( $mainsilver,#7e4def  )
+        
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    #multiscroll{
+        .headerleft{
+            width: 200% !important;
+            z-index: 4;
+        }
+        .aboutmeleft{
+            width: 200% !important;
+            
+        }
+        .aboutmeright{
+            width:200% !important;
+           background-color: transparent;
+        }
+        .projectsleft{
+            width: 100vw !important;
+            background-color: $mainpurple;
+            color: white !important;
+        }
+        .projectsright{
+            width: 100vw !important;
+            left: 0;
+            background: transparent;
+            
+            
+    
+        }
+        .contactleft{
+            
+            width: 100vw !important;
+            z-index: 2;
+            background-image: linear-gradient( #c602ff,#7e4def  );
+        }
+        .contactright{
+            
+            margin-left: -100%;
+            background: 0;
+            width: 1px !important;
+            overflow: hidden;
+
+        }
+        
+
+    }
+}

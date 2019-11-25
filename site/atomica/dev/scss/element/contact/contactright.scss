@@ -1,0 +1,110 @@
+#contactright{
+    .animatewrapper2{
+        &.entermove2{
+            
+                        animation: jello-vertical 1s both;
+            
+          }
+      }
+    height: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    color: white;
+    .container{
+        margin-top: 20px;
+        h2{
+            font-family: MARSNEVENEKSK-Clean;
+            text-align: left;
+            font-size: 50px;
+            text-shadow: -4px 4px 2px rgba(10, 10, 10, 1);
+            color: white;
+        }
+        form{
+            transition: transform 0.5s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                        background: $mainpurple;
+        }
+            height: 100%;
+            width: 70%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: stretch;
+            border: 5px white;
+            border-style: solid;
+            transform: rotate(2deg);
+                    input{
+                    color: white;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    border-top: 0px solid white;
+                    border-bottom: 2px solid white;
+                    border-left: 0px solid white;
+                    border-right: 0px solid white;
+                    padding: 5px;
+                    transition: ease-in-out 0.2s;
+                    background: 0;
+                    &:focus{
+                    border-bottom: 2px solid transparent;
+                    border-top: 0px solid white;
+                    border-left: 0px solid white;
+                    border-right: 0px solid white;
+                    border-image: linear-gradient(to right, blue 0%, $mainpurple 100%);
+                    border-image-slice: 1;
+                    transform: scale(1.1);
+                    }
+                    
+                }
+                .submitknop{
+                    
+                   
+                    border: 0;
+                    padding: 10px 50px;
+                    border: 2px solid white;
+  
+                   color: white;
+                   background: 0;
+                  
+                    &:hover{
+                        border: 2px solid transparent;
+  
+                        border-image: linear-gradient(to right, blue, lightblue);
+                    border-image-slice: 1;
+                    transform: scale(1.1);
+                    }
+                    
+                }
+                textarea{
+                    color: white;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 80%;
+                   background: 0;
+                    padding: 10px;
+                    border-top: 0px solid white;
+                    border-bottom: 2px solid white;
+                    border-left: 0px solid white;
+                    border-right: 0px solid white;
+                    padding: 5px;
+                    transition: ease-in-out 0.2s;
+                    &:focus{
+                        border-bottom: 2px solid transparent;
+                        border-top: 0px solid white;
+                        border-left: 0px solid white;
+                        border-right: 0px solid white;
+                    border-image: linear-gradient(to right, blue, lightblue);
+                    border-image-slice: 1;
+                    transform: scale(1.05);
+                    }
+                }
+        }
+    }
+}

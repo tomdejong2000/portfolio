@@ -1,0 +1,111 @@
+#contactleft{
+    height: 100%;
+    color: white;
+    .animatewrapper{
+        &.entermove{
+            animation: jello-vertical 1s both;
+          }
+          
+      }   
+
+    .container{
+        height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-end;
+align-content: stretch;
+padding-top: 10%;
+    
+    h2{
+        font-family: Cinematografica-Regular-trial;
+        text-align: center;
+        letter-spacing: 10px;
+        text-shadow: -4px 4px 2px rgba(150, 150, 240, 1);
+        color: white;
+        width: 100vw;
+        z-index: 3;
+        margin: 30px auto;
+        font-size: 50px;
+        &.entermove{
+            animation: jello-vertical 1s both;
+          }
+          &:hover{
+          animation: wobble-hor-bottom 2s infinite both;
+          }
+  
+    }
+    .tekst{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: flex-end;
+align-content: stretch;
+
+    
+    p{
+        font-size: 15px;
+        width: 60%;
+        text-align: left;
+        border: 3px white;
+        border-style: dashed solid;
+        padding: 20px;
+        transform: rotate(-6deg);
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            background: $mainpurple;
+        }
+    }
+    ul{
+        border: 3px white;
+        border-style: dashed solid;
+        padding: 20px;
+        transform: rotate(6deg);
+        list-style-type: none;
+      
+       font-size: 20px;
+       text-align: right;
+       transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            background: $mainpurple;
+        }
+       a{
+           color: white;
+       }
+            
+    }
+}
+}
+}
+
+@media only screen and (max-width: 850px) {
+    #contactleft{
+      padding-top: 15%;
+      color: white !important;
+    .container{
+
+        h2{
+            color: white !important;
+        }
+    .tekst{
+        align-items: center;
+        
+        p{
+            width: 80%;
+            text-align: left;
+        }
+        a{
+            color: white !important;
+        }
+    }
+   
+}
+}
+}

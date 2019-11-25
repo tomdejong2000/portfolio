@@ -1,54 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Atomica | Component driven front-end scaffold</title>
-    <meta name="author" content="Jefferson van der Heijden">
+    <title>portfolio</title>
+    <meta name="author" content="Tom de Jong">
+
+    
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../gfx/favicon.ico" />
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet"> 
+
+    
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../node_modules/multiscroll.js/jquery.multiscroll.css" />
     <!-- build:css /site/atomica/prod/build/@@site_assets['main.css']@@ -->
-        <link rel="stylesheet" type="text/css" href="/site/atomica/prod/build/main.css">
+    <link rel="stylesheet" type="text/css" href="/portfolio/site/atomica/prod/build/main.css">
     <!-- endbuild -->
 
     <!-- build:js /site/atomica/prod/build/@@site_assets['main.js']@@ -->
-        <script src="/site/atomica/prod/build/main.js"></script>
+    <script src="/portfolio/site/atomica/prod/build/main.js"></script>
     <!-- endbuild -->
 
-    <script src="/site/atomica/prod/build/main-es6.js"></script>
+    <script src="/portfolio/site/atomica/prod/build/main-es6.js"></script>
+
+   
+
+    
+
+
 
 </head>
 
-
 <body>
+	<nav id='nav' class='test'>
 
-	<nav id="main-navigation">
+
+
+<ul class='navul'>
+    <a class="homelink"href=#header><li><i class="fas fa-home"></i>home </li></a>
+    <a class='aboutmelink'href=#aboutme><li><i class="fas fa-user"></i>aboutme</li></a>
+    <a class='projectslink'href=#projects><li><i class="fas fa-pen"></i>projects</li></a>
+    <a class='contactlink'href=#contact><li><i class="fas fa-envelope"></i>contact</li></a>
+    <a class='footerlink' href=#footer><li><i class="fab fa-accessible-icon"></i>footer</li></a>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+ 
+</nav>
+
+
+
+   <!-- <div class="burger3 menu">
+        <div class="icon"></div>
+      </div>
+    -->
+      
+
+     <!-- <ul class="links">
+          <a href=#header><li>header</li></a>
+          <a href=#aboutme><li>aboutme</li></a>
+          <a href=#projects><li>projects</li></a>
+          <a href=#footer><li>footer</li></a>
+          <a href=#header><li>nog1</li></a>
+      </ul> -->
+	
+
+	
+
+
+<div id="multiscroll">
+       
+
+        <div class="ms-left">
+            <div class="ms-section headerleft"><div id=header>
+    <div class="headercontainer">
+        
+        <div class="container__background"></div>
+        
+
+        <div class="mask-container">
+         <img src='../gfx/titlething.png'>
+        </div>
+
+        </div>
+    </div></div>
+            <div class="ms-section aboutmeleft"><div id='aboutmeleft'>
+    <div class='container'>
+<h2 class="headerme">DIT BEN IK</h2>
+<ul>
+    <div class="borderwrap">
+    <li>18 jaar oud</li>
+    <li>MBO niveau 4 3e jaar</li>
+    <li>Rotterdam</li>
+    <li class="pli"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam deserunt laborum iusto commodi, harum libero ipsum ducimus officia sequi ullam facere nobis aliquid quam animi ex nihil sint nulla fugiat!</p>
+    </li>
+</div>
+</ul>
+</div>
+</div></div>
+			<div class="ms-section projectsleft"><div id="projectsleft">
+    <h2 class='headerpr'>Mijn projecten</h2>
+    <div class="animatewrapperpr">
+    <p>tekst over mijn projecten enzo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat in, modi
+        ipsum similique reprehenderit voluptates optio libero, iste, vero doloribus dignissimos blanditiis animi quis
+        dicta dolore explicabo repellat quam.
+    </p>
+    </div>
+</div></div>
+			<div class="ms-section contactleft"><div id='contactleft'>
+    <div class=container>
+    <h2 class="headercontact">Stuur mij een bericht</h2>
+    
+    <div class=tekst>
+        <div class="animatewrapper">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit consectetur error possimus suscipit, saepe
+        nam perspiciatis, dolore reprehenderit aliquid explicabo? Quibusdam officiis quisquam blanditiis animi dolores
+        soluta! Nesciunt, quod.</p>
+        </div>
+    <div class="animatewrapper">   
+    <ul>
+        <a href="jeff.html"><li><i class="fas fa-phone"></i> 06 40329869</li></a>
+        <a href="jeff.html"><li><i class="fas fa-envelope"></i> Tomdejong2000@gmail.com</li></a>
+        <a href="jeff.html"><li><i class="fab fa-linkedin-in"></i> Linkedin</li></a>
+     </ul> 
+     </div>
+    </div>
+
+    </div>
+</div></div>
+			<div class='ms-section ms-hide footerleft'></div>
+        </div>
+        <div class="ms-right">
+            <div class="ms-section ms-hide"></div>
+            <div class="ms-section aboutmeright"><div id= 'aboutmeright'>
+
+<img src='../gfx/tomdef.jpg'>
+
+
+<div class=typewriter>
+    <h2>
+        <a class="typewrite" data-period="2000" data-type='[ "Hello I am Tom.", "I am a secondyears Ict student", "I love bright colors", "I make things pretty", "I Love to Develop." ]'>
+          <span class="wrap"></span>
+        </a>
+      </h2>
+</div>
+
+</div></div>
+            <div class="ms-section projectsright"><div id="projectsright">
+    <div class="projectslides">
+        <div><img src="../gfx/1.jpg"></div>
+        
+        <div><img src="../gfx/jeff.png"></div>
+      </div>
+</div></div>
+            <div class="ms-section ms-hide contactright"><div id="contactright">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                Atomica
-            </div>
+
+      <div class="animatewrapper2">
+        <form action="jeff.html">
+      
+          
+          <input type="text" id="name" name="name" placeholder="Je naam...">
+      
+          
+          <input type="email" id="email" name="email" placeholder="Je email">
+      
+          
+          <textarea id="message" name="message" placeholder="Wat wilde je tegen me zeggen?"></textarea>
+      
+          <input class='submitknop' type="submit" value="Verstuur">
+      
+        </form>
+      </div> 
+      </div>
+</div></div>
+			<div class='ms-section footerright'><div id='footerright'>
+    <h2>dikke footer</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellendus dolore, ad expedita fugiat eum
+        quibusdam officiis facilis, corrupti nostrum quae placeat dolor debitis aliquid mollitia? Amet explicabo rem
+        officiis.</p>
+        
+</div></div>
         </div>
     </div>
-</nav>
+
+   
 
 
 	
 
-	<section id="main-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					v1.0
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- This following line is needed in case of using the default easing option or when using another
+    one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="../../../../node_modules/jquery.easing/jquery.easing.min.js"></script>
+   
 
-
+    <script type="text/javascript" src="../../../../node_modules/multiscroll.js/jquery.multiscroll.js"></script>
+    
 
 </body>
 </html>

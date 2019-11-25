@@ -1,0 +1,52 @@
+#projectsright{
+    color: white;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    height:100%;
+    width: 100%;
+    .projectslides{
+        margin-top: 33px;
+        width: 30%;
+        transition: ease-in-out 0.2s;
+       
+        &:hover{
+            transform: scale(1.2);
+        }
+        img{
+            width: 100%;
+            height: auto;
+            
+            
+        }
+    }
+	
+	
+
+}
+
+@media only screen and (max-width: 850px) {
+
+#projectsright{
+    color: white !important;
+    .projectslides{
+        margin-left: -60%;
+        margin-top: 70%;
+    }
+}
+#projectsleft{
+    padding-top: 20%;
+    color: white !important;
+    align-items: center;
+    p{
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+}
+

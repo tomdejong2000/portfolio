@@ -1,10 +1,21 @@
-{% include "component/head/head.html" %}
+{% include "element/head/head.html" %}
 
 <body>
+	{% include 'element/nav/nav.html' %}
+	
 
-	{% include "component/navigation/navigation.html" %}
+	{% block content %} 
+	{% endblock %}
 
-	{% block content %} {% endblock %}
+	
+
+    <!-- This following line is needed in case of using the default easing option or when using another
+    one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="../../../../node_modules/jquery.easing/jquery.easing.min.js"></script>
+   
+
+    <script type="text/javascript" src="../../../../node_modules/multiscroll.js/jquery.multiscroll.js"></script>
+    
 
 </body>
 </html>
